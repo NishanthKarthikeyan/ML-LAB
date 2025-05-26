@@ -1,0 +1,17 @@
+x = float(input("Enter first number: "))
+op = input("Enter operator (+, -, *, /): ")
+y = float(input("Enter second number: "))
+
+if op == '+':
+    print("Result:", x + y)
+elif op == '-':
+    print("Result:", x - y)
+elif op == '*':
+    print("Result:", x * y)
+elif op == '/':
+    if y != 0:
+        print("Result:", x / y)
+    else:
+        print("Error: Division by zero!")
+else:
+    print("Invalid operator")
